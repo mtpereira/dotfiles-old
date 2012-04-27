@@ -21,12 +21,3 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# rag: path to pin
-if [ -d "$HOME/bin/pin" ] ; then
-    PATH="$HOME/bin/pin:$PATH"
-fi
-
-# rag: path to pin tools
-if [ -d "$HOME/tese/trunk/pin/source/tools" ] ; then
-    export PINTOOLS="$HOME/tese/trunk/pin/source/tools"
-fi
