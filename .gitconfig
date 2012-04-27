@@ -1,0 +1,5 @@
+[user]
+	name = Manuel Tiago Pereira
+	email = mt.pereira@gmail.com
+[merge]
+	tool = vimdiff
