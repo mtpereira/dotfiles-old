@@ -1,0 +1,31 @@
+background yes
+use_xft yes
+xftfont monospace:pixelsize=10
+xftalpha 0.8
+update_interval 60
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type override
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders noo
+draw_graph_borders yes
+stippled_borders 0
+border_width 0
+default_color D6D6D6
+default_shade_color D6D6D6
+default_outline_color D6D6D6
+alignment top_left
+no_buffers yes
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+use_spacer left
+text_buffer_size 65536
+
+TEXT
+${exec cat /home/rag/dti/doc/TODO}
+
