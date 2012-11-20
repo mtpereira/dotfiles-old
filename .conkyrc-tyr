@@ -1,4 +1,4 @@
-background yes
+background no
 use_xft yes
 xftfont monospace:pixelsize=10
 xftalpha 0.8
@@ -20,7 +20,7 @@ default_color D6D6D6
 default_shade_color D6D6D6
 default_outline_color D6D6D6
 alignment top_right
-gap_x 12
+gap_x 1035
 gap_y 12
 no_buffers yes
 cpu_avg_samples 2
