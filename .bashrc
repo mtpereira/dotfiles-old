@@ -101,6 +101,11 @@ fi
 # rag: expand history but do not execute
 shopt -s histverify
 
+# rag: source .bash_functions
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions 
+fi
+
 # rag: enable screen automatically updating window name
 #case "$TERM" in
 #    screen*) PROMPT_COMMAND="printf '\033k$(hostname -s)\033\\';"${PROMPT_COMMAND}
