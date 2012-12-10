@@ -20,13 +20,13 @@ default_color D6D6D6
 default_shade_color D6D6D6
 default_outline_color D6D6D6
 alignment top_right
-gap_x 1035
+gap_x 1034
 gap_y 12
 no_buffers yes
 cpu_avg_samples 2
 net_avg_samples 2
 override_utf8_locale yes
-use_spacer yes
+use_spacer right
 
 maximum_width 450
 
