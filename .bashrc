@@ -106,6 +106,11 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions 
 fi
 
+# rag: source .bash_env
+if [ -f ~/.bash_env ]; then
+    . ~/.bash_env 
+fi
+
 # rag: enable screen automatically updating window name
 #case "$TERM" in
 #    screen*) PROMPT_COMMAND="printf '\033k$(hostname -s)\033\\';"${PROMPT_COMMAND}

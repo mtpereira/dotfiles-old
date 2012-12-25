@@ -3,3 +3,13 @@
 	email = mt.pereira@gmail.com
 [merge]
 	tool = vimdiff
+
+[alias]
+	ci = commit
+	st = status
+	s = status -s
+	l = log
+	df = diff
+	co = checkout
+	a = add
+

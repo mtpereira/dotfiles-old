@@ -13,5 +13,5 @@ IGNORE=".git .svn"
 FIGNORE=$(echo $IGNORE | awk 'BEGIN { RS=" "; FS="\n"; } { print "! -name ", $1 }')
 FILES=$(find . -xdev -maxdepth 1 ${FIGNORE} ! -executable -type f -printf "%f ")
 
-for file in ${FILES}; do mv "$HOME/$file" "$PWD/$file.safe" && ln -s "$PWD/$file" "$HOME/$file" && rm "$PWD/$file.safe"; done
+for file in ${FILES}; do mv "$HOME/$file" "$PWD/$file.safe" ; ln -s "$PWD/$file" "$HOME/$file" && rm "$PWD/$file.safe"; done
 
