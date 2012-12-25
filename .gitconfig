@@ -13,3 +13,5 @@
 	co = checkout
 	a = add
 
+[color]
+	ui = auto
