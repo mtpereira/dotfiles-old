@@ -1,4 +1,4 @@
 function ads() {
-    ldapsearch -LLL -D ptcom\\xpita19 -W "(sAMAccountName=${1})"
+    ldapsearch -LLL -D ${1} -W "(sAMAccountName=${2})"
 }
 
