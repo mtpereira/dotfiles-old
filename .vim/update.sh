@@ -17,7 +17,7 @@
 #   ./update.sh repos powerline
 #
 
-set -eu
+set -e
 
 cd ~/.dotfiles
 
