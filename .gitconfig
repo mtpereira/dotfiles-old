@@ -1,6 +1,7 @@
 [user]
 	name = Manuel Tiago Pereira
 	email = mt.pereira@gmail.com
+
 [merge]
 	tool = vimdiff
 
@@ -12,6 +13,13 @@
 	df = diff
 	co = checkout
 	a = add
+    f = fetch
+    ps = push
+    pl = pull
+    m = merge
 
 [color]
 	ui = auto
+
+[core]
+	excludesfile = /home/rag/.gitignore
