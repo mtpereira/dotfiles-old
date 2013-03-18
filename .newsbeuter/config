@@ -3,5 +3,5 @@ reload-time 30
 refresh-on-startup yes
 notify-beep yes
 confirm-exit yes
-browser "google-chrome %u"
+browser "google-chrome %u &"
 
