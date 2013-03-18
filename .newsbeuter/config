@@ -1,10 +1,11 @@
 auto-reload yes
 reload-time 30
 refresh-on-startup yes
-notify-beep yes
 confirm-exit yes
-browser "google-chrome %u &"
+
+browser "google-chrome %u &>/dev/null &"
+
 notify-always no
 notify-program "~/bin/newsbeuter-notifier.sh"
 notify-format "%d new articles (%n unread articles, %f unread feeds)"
-
+notify-beep yes
