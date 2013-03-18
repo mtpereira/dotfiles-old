@@ -122,6 +122,10 @@ if has vim; then
   cd $basedir
   ./.vim/update.sh all
 fi
+if has newsbeuter; then
+  cd $basedir
+  link newsbeuter-notifier.sh $HOME/bin/newsbeuter-notifier.sh
+fi
 
 note "Running post-install script, if any..."
 postinstall=$HOME/.postinstall
