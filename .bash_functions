@@ -13,6 +13,12 @@ function mkv() {
 	mv "${@: 2}" "${@: 1:1}"
 }
 
+# cp && EDITOR
+function cped () {
+    cp ${1} ${2}
+    $EDITOR ${2}
+}
+
 # ssh-copy-id and add to ssh config
 function ssh-add-host() {
     if [ -n "${1}" ] && [ -n "${2}" ]; then
