@@ -7,3 +7,19 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 filetype indent on
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+
+fun! StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    let _s=@/
+    let @/=_s
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType c,cpp,java,php,ruby,python,perl,bash autocmd BufWritePre <buffer> :call StripTrailingWhitespaces()
