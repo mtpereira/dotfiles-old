@@ -41,14 +41,12 @@ function mkd() {
 
 # mkdir && mv
 function mkv() {
-    mkdir "${@: 1:1}"
-    mv "${@: 2}" "${@: 1:1}"
+    mkdir "${@: 1:1}" && mv "${@: 2}" "${@: 1:1}"
 }
 
 # cp && EDITOR
 function cped () {
-    cp ${1} ${2}
-    $EDITOR ${2}
+    cp ${1} ${2} && $EDITOR ${2}
 }
 
 # symlink
@@ -96,7 +94,7 @@ function ssh-add-host() {
     fi
 }
 
-# select default ssh key
+# select default ssh key and add it to keyring
 # usage: ssh-select-key [name]
 function ssh-select-key() {
     selected=""
@@ -118,6 +116,7 @@ function ssh-select-key() {
     fi
     link ${sshdir}/"${selected}" ${sshdir}/id_rsa
     link ${sshdir}/"${selected}".pub ${sshdir}/id_rsa.pub
+    ssh-add
 }
 
 ### SYSADMIN ###
