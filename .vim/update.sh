@@ -36,6 +36,7 @@ repos=(
   https://github.com/tpope/vim-pathogen.git
   https://github.com/davidhalter/jedi-vim.git
   https://github.com/tpope/vim-sensible.git
+  https://github.com/elzr/vim-json.git
   )
 
 # Here's a list of everything else to download in the format
