@@ -17,6 +17,7 @@
     ps = push
     pl = pull
     m = merge
+    hrk-ps = push heroku master
 
 [color]
 	ui = auto
