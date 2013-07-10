@@ -24,3 +24,5 @@
 
 [core]
 	excludesfile = /home/rag/.gitignore
+[push]
+	default = current

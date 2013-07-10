@@ -111,8 +111,13 @@ function ssh-select-key() {
     fi
     note "Selected key: ${selected}"
     if [ -e ${sshdir}/id_rsa ] &&
-       [ -e ${sshdir}/id_rsa.pub ]; then
+       [ -e ${sshdir}/id_rsa.pub ] &&
+       [ -L ${sshdir}/id_rsa ] &&
+       [ -L ${sshdir}/id_rsa.pub ]; then
         rm ${sshdir}/id_rsa{,.pub}
+    else
+        err "id_rsa files exist and are NOT symlinks!"
+        return 1
     fi
     link ${sshdir}/"${selected}" ${sshdir}/id_rsa
     link ${sshdir}/"${selected}".pub ${sshdir}/id_rsa.pub
