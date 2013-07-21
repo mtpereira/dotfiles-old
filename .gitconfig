@@ -23,6 +23,6 @@
 	ui = auto
 
 [core]
-	excludesfile = /home/rag/.gitignore
+	excludesfile = $HOME/.gitignore
 [push]
 	default = current
