@@ -20,7 +20,7 @@ default_color D6D6D6
 default_shade_color D6D6D6
 default_outline_color D6D6D6
 alignment top_right
-gap_x 1034
+gap_x 1380
 gap_y 12
 no_buffers yes
 cpu_avg_samples 2

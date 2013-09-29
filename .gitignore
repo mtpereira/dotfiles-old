@@ -1,7 +1,7 @@
 # Vim files #
 #############
 *.swp
-*.un~
+.*.un~
 
 # Python files #
 ################
