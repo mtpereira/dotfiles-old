@@ -142,9 +142,6 @@ bar {
 # rag: configs
 # default layout
 workspace_layout tabbed
-# hide borders
-#hide_edge_borders none
-new_window none
 
 # rag: binds
 # audio
@@ -161,13 +158,13 @@ bindsym $mod+Ctrl+L exec i3lock
 
 # rag: autostart
 # network
-exec /usr/bin/nm-applet
+exec /usr/bin/wicd-gtk
 # clipboard
 exec /usr/bin/parcellite
 # wallpaper
 exec --no-startup-id feh --bg-scale ~/.background
 # keepassx
-exec /usr/bin/keepasxx
+exec /usr/bin/keepassx
 # orage
 exec /usr/bin/orage
 for_window [class="Orage"] floating enable
