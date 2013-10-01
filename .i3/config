@@ -161,6 +161,7 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Print exec /usr/bin/xfce4-screenshooter
 # i3-exit
 bindsym $mod+Ctrl+Pause exec i3-exit
+for_window [class="I3-exit"] floating enable
 # i3lock
 bindsym $mod+Pause exec i3lock
 
