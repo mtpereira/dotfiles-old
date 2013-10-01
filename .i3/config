@@ -13,7 +13,7 @@ set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:Terminus 11px
+font -xos4-terminus-medium-*-normal-*-12-120-72-72-c-60-*-u
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -137,11 +137,14 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        font -*-terminus-medium-*-normal-*-12-120-72-72-c-60-*-u
 }
 
 # rag: configs
 # default layout
 workspace_layout tabbed
+# for pop windows
+for_window [window_role="pop-up"] floating enable
 
 # rag: binds
 # workspaces
@@ -154,6 +157,8 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 # scratchpad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+# xfce4-screenshotern
+bindsym $mod+Print exec /usr/bin/xfce4-screenshooter
 # i3-exit
 bindsym $mod+Ctrl+Pause exec i3-exit
 # i3lock
@@ -182,6 +187,7 @@ for_window [class="Mousepad"] move scratchpad
 exec gnome-settings-daemon
 # workrave
 exec /usr/bin/workrave
+for_window [class="Workrave"] floating enable
 # dropbox
 exec /usr/bin/dropbox
 # thunar-volman
