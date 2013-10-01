@@ -189,7 +189,7 @@ exec gnome-settings-daemon
 exec /usr/bin/workrave
 for_window [class="Workrave"] floating enable
 # dropbox
-exec /usr/bin/dropbox
+exec /usr/bin/dropbox start -i
 # thunar-volman
 exec /usr/bin/thunar-volman
 # xfce4-power-manager
