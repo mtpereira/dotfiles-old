@@ -150,6 +150,9 @@ for_window [window_role="pop-up"] floating enable
 # workspaces
 bindsym $mod+Ctrl+h workspace prev
 bindsym $mod+Ctrl+l workspace next
+# monitor outputs
+bindsym $mod+Ctrl+Shift+h move container to output left
+bindsym $mod+Ctrl+Shift+l move container to output right
 # audio
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
@@ -168,14 +171,20 @@ bindsym $mod+Pause exec i3lock
 # rag: autostart
 # network
 exec /usr/bin/wicd-gtk
-# clipboard
-exec /usr/bin/parcellite
+for_window [class="Wicd-client.py"] floating enable
+for_window [class="Wicd-client.py"] floating_minimum_size 600 x 400
+for_window [class="Wicd-client.py"] floating_maximum_size 600 x 400
+# keyboard layout
+## swap caps
+exec --no-startup-id xmodmap ~/.Xmodmap
+## set keymap to pt for keepassx autotype
+exec --no-startup-id setxkbmap pt
 # wallpaper
 exec --no-startup-id feh --bg-scale ~/.background
 # keepassx
 exec /usr/bin/keepassx
 # orage
-exec /usr/bin/orage
+exec --no-startup-id /usr/bin/orage
 for_window [class="Orage"] floating enable
 for_window [class="Orage"] floating_minimum_size 300 x 300
 for_window [class="Orage"] floating_maximum_size 300 x 300
@@ -185,16 +194,16 @@ set $scratchpad-notes "~/.scratchpad/notes-$(date +%Y%m%d).txt"
 exec --no-startup-id mousepad $scratchpad-notes
 for_window [class="Mousepad"] move scratchpad
 # gnome-settings-daemon
-exec gnome-settings-daemon
+exec --no-startup-id gnome-settings-daemon
 # workrave
-exec /usr/bin/workrave
+exec --no-startup-id /usr/bin/workrave
 for_window [class="Workrave"] floating enable
 # dropbox
-exec /usr/bin/dropbox start -i
+exec --no-startup-id /usr/bin/dropbox start -i
 # thunar-volman
-exec /usr/bin/thunar-volman
+exec --no-startup-id /usr/bin/thunar-volman
 # xfce4-power-manager
-exec /usr/bin/xfce4-power-manager
+exec --no-startup-id /usr/bin/xfce4-power-manager
 # conky
-exec conky
+exec --no-startup-id conky
 
