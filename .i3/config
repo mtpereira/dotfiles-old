@@ -151,8 +151,10 @@ for_window [window_role="pop-up"] floating enable
 bindsym $mod+Ctrl+h workspace prev
 bindsym $mod+Ctrl+l workspace next
 # monitor outputs
-bindsym $mod+Ctrl+Shift+h move container to output left
-bindsym $mod+Ctrl+Shift+l move container to output right
+bindsym $mod+Shift+h move container to output left
+bindsym $mod+Shift+l move container to output right
+bindsym $mod+Shift+Ctrl+h move workspace to output left
+bindsym $mod+Shift+Ctrl+l move workspace to output right
 # audio
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
@@ -181,8 +183,6 @@ exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id setxkbmap pt
 # wallpaper
 exec --no-startup-id feh --bg-scale ~/.background
-# keepassx
-exec /usr/bin/keepassx
 # orage
 exec --no-startup-id /usr/bin/orage
 for_window [class="Orage"] floating enable
@@ -206,4 +206,5 @@ exec --no-startup-id /usr/bin/thunar-volman
 exec --no-startup-id /usr/bin/xfce4-power-manager
 # conky
 exec --no-startup-id conky
-
+# keepassx
+exec /usr/bin/keepassx
