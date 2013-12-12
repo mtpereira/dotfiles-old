@@ -150,11 +150,14 @@ for_window [window_role="pop-up"] floating enable
 # workspaces
 bindsym $mod+Ctrl+h workspace prev
 bindsym $mod+Ctrl+l workspace next
+bindsym $mod+b workspace back_and_forth
 # monitor outputs
 bindsym $mod+Shift+h move container to output left
 bindsym $mod+Shift+l move container to output right
 bindsym $mod+Shift+Ctrl+h move workspace to output left
 bindsym $mod+Shift+Ctrl+l move workspace to output right
+bindsym $mod+Shift+Ctrl+j move workspace to output down
+bindsym $mod+Shift+Ctrl+k move workspace to output up
 # audio
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
