@@ -75,22 +75,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable color support of ls and also add handy aliases
+# rag: enable color support of ls
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
-    alias ls='ls --color=auto -F'
-    alias dir='dir --color=auto -F'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
-
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -104,16 +92,18 @@ shopt -s histverify
 
 # rag: source .bash_functions
 if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions 
+    . ~/.bash_functions
 fi
 
 # rag: source .bash_env
 if [ -f ~/.bash_env ]; then
-    . ~/.bash_env 
+    . ~/.bash_env
 fi
 
-# rag: enable screen automatically updating window name
-#case "$TERM" in
-#    screen*) PROMPT_COMMAND="printf '\033k$(hostname -s)\033\\';"${PROMPT_COMMAND}
-#    ;;
-#esac
+# rag: be more compatible with the rest of the
+# world, avoid "terminal is not fully functional"
+case "$TERM" in
+    rxvt*256color*)
+       TERM=rxvt
+    ;;
+esac
