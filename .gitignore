@@ -1,8 +1,1 @@
-# Vim files #
-#############
-*.swp
-.*.un~
-
-# Python files #
-################
-*.pyc
+.vim/bundle
