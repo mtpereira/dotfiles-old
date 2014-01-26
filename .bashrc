@@ -50,11 +50,11 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
+#if [ "$color_prompt" = yes ]; then
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
+#    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+#fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -107,3 +107,10 @@ case "$TERM" in
        TERM=rxvt
     ;;
 esac
+
+# rag: user powerline-shell (https://github.com/milkbikis/powerline-shell)
+function _update_ps1() {
+    export PS1="$(~/.dotfiles/powerline-shell/powerline-shell.py  --colorize-hostname --mode flat $? 2> /dev/null)"
+}
+export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+
