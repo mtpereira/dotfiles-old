@@ -109,6 +109,11 @@ for path in .* ; do
     esac
 done
 
+note "Installing .gitignore..."
+if [ -e gitignore ]; then
+    link $basedir/gitignore $HOME/.gitignore
+fi
+
 note "Symlinking Vim configurations..."
 for rc in vim; do
     link $basedir/.vim/${rc}rc $HOME/.${rc}rc
