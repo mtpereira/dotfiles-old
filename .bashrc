@@ -89,9 +89,9 @@ case "$TERM" in
     ;;
 esac
 
-# rag: user powerline-shell (https://github.com/milkbikis/powerline-shell)
+# rag: use powerline-shell (https://github.com/milkbikis/powerline-shell)
 function _update_ps1() {
     export PS1="$(~/.dotfiles/powerline-shell/powerline-shell.py --cwd-max-depth 5 --colorize-hostname --mode flat $? 2> /dev/null)"
 }
-export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+export PROMPT_COMMAND="_update_ps1 && echo -ne \"\033]0;${USER}@${HOSTNAME}\007\""
 
