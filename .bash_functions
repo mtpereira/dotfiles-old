@@ -100,7 +100,7 @@ function ssh-select-key() {
     selected=""
     sshdir="${HOME}/.ssh"
     if [ -z "${1}" ]; then
-        selected="$(hostname --short)"
+        selected="$(hostname -s)"
     else
         selected="${1}"
         if [ ! -e ${sshdir}/"${selected}" ] ||
