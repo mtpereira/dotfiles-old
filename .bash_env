@@ -2,4 +2,5 @@ export EDITOR="vim"
 PATH=$HOME/bin:$HOME/bin/scripts:$PATH
 PATH=/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH
 PATH=/opt/homebrew/bin:$PATH
+PATH=/opt/homebrew/sbin:$PATH
 export PATH=$PATH
