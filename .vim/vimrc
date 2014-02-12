@@ -8,6 +8,7 @@ set softtabstop=4
 set shiftwidth=4
 filetype indent on
 set background=dark
+set paste
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
