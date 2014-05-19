@@ -37,6 +37,7 @@ repos=(
   https://github.com/davidhalter/jedi-vim.git
   https://github.com/tpope/vim-sensible.git
   https://github.com/elzr/vim-json.git
+  https://github.com/elixir-lang/vim-elixir
   )
 
 # Here's a list of everything else to download in the format
