@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 #
 # *Highly* inspired (ripped-off) from https://github.com/statico/dotfiles
 #
@@ -38,6 +38,7 @@ repos=(
   https://github.com/tpope/vim-sensible.git
   https://github.com/elzr/vim-json.git
   https://github.com/elixir-lang/vim-elixir
+  https://github.com/editorconfig/editorconfig-vim
   )
 
 # Here's a list of everything else to download in the format
