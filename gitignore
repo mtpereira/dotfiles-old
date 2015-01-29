@@ -11,3 +11,7 @@
 # #########
 *.vagrant/
 *vagrant_ansible_inventory*
+
+# Mac OS #
+##########
+.DS_Store
