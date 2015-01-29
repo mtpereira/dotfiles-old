@@ -39,6 +39,7 @@ repos=(
   https://github.com/elzr/vim-json.git
   https://github.com/elixir-lang/vim-elixir
   https://github.com/editorconfig/editorconfig-vim
+  https://github.com/altercation/vim-colors-solarized
   )
 
 # Here's a list of everything else to download in the format
