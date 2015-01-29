@@ -24,6 +24,6 @@
 	ui = auto
 
 [core]
-	excludesfile = $HOME/.gitignore
+	excludesfile = ~/.gitignore
 [push]
 	default = current
