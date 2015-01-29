@@ -1,14 +1,19 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 syntax on
+set background=dark
+colorscheme solarized
 filetype plugin indent on
 set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 filetype indent on
-set background=dark
 set paste
+set textwidth=80
+set wrapmargin=2
+highlight OverLenght ctermbg=darkred ctermfg=white
+call matchadd ('OverLenght', '\%81v', 100)
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
@@ -35,5 +40,6 @@ function! AppendModeline()
 endfunction
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
-autocmd FileType c,cpp,java,php,ruby,python,perl,bash autocmd BufWritePre <buffer> :call StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,perl,bash,sh autocmd BufWritePre
+\ <buffer> :call StripTrailingWhitespaces()
 autocmd FileType python set commentstring=#\%s
