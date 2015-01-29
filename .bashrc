@@ -81,6 +81,9 @@ if [ -f ~/.bash_env ]; then
     . ~/.bash_env
 fi
 
+# rag: start keychain
+eval `keychain --quiet --quick --eval --agents ssh,gpg tyr asgard vagrant`
+
 # rag: be more compatible with the rest of the
 # world, avoid "terminal is not fully functional"
 case "$TERM" in

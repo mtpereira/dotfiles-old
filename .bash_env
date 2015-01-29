@@ -7,3 +7,4 @@ export PATH=$PATH
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export PYTHONPATH=/opt/homebrew/lib/python2.7/site-packages/
+export GPGKEY=82D3CE73
