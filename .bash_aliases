@@ -28,7 +28,7 @@ alias dist-upgrade="sudo apt-get update && sudo apt-get dist-upgrade"
 alias safe-upgrade="sudo apt-get update && sudo apt-get safe-upgrade"
 
 # Python 2
-alias py2="export PYTHONPATH=/opt/homebrew/lib/python2.7/site-packages/ && python2.7"
-alias py3="export PYTHONPATH=/opt/homebrew/lib/python3.4/site-packages/ && python3.4"
+alias py2="python2.7"
+alias py3="python3.4"
 alias py="py3"
 
