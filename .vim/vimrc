@@ -1,9 +1,11 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+
 syntax on
 set background=dark
 colorscheme solarized
 set number
+
 filetype plugin indent on
 set tabstop=4
 set expandtab
@@ -13,6 +15,7 @@ filetype indent on
 set paste
 set textwidth=80
 set wrapmargin=2
+
 highlight OverLenght ctermbg=darkred ctermfg=white
 call matchadd ('OverLenght', '\%81v', 100)
 
@@ -44,3 +47,7 @@ nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 autocmd FileType c,cpp,java,php,ruby,python,perl,bash,sh autocmd BufWritePre
 \ <buffer> :call StripTrailingWhitespaces()
 autocmd FileType python set commentstring=#\%s
+
+" Ansible indent function will remove all indent after a blank line.
+let g:ansible_options = {'ignore_blank_lines': 0}
+
