@@ -1,29 +1,31 @@
 [user]
-	name = Manuel Tiago Pereira
-	email = mt.pereira@gmail.com
+    name = Manuel Tiago Pereira
+    email = mt.pereira@gmail.com
 
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 
 [alias]
-	ci = commit
-	st = status
-	s = status -s -b
-	l = log
-	df = diff
-	co = checkout
-	a = add
+    ci = commit
+    st = status
+    s = status -s -b
+    l = log --graph --decorate --all --name-status --pretty='%C(auto)%h%Creset %C(auto)%d%Creset %cN (%ce) %ad %n %s'
+    df = diff
+    co = checkout
+    cob = checkout -b
+    a = add
     f = fetch
-    ps = push
+    ps = push --set-upstream
+    pst = ps --tags
     pl = pull
+    up = !git pull $@ && git submodule update --init --recursive
     m = merge
     b = branch
-    hrk-ps = push heroku master
-
+    am = commit --amend
 [color]
-	ui = auto
+    ui = auto
 
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 [push]
-	default = current
+    default = current
