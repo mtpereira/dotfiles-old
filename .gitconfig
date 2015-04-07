@@ -7,6 +7,7 @@
 
 [alias]
     ci = commit
+    cam = commit --amend
     st = status
     s = status -s -b
     l = log --graph --decorate --all --name-status --pretty='%C(auto)%h%Creset %C(auto)%d%Creset %cN (%ce) %ad %n %s'
@@ -16,12 +17,11 @@
     a = add
     f = fetch
     ps = push --set-upstream
-    pst = ps --tags
+    pst = !git ps && git ps --tags
     pl = pull
     up = !git pull $@ && git submodule update --init --recursive
     m = merge
     b = branch
-    am = commit --amend
 [color]
     ui = auto
 
@@ -29,3 +29,6 @@
     excludesfile = ~/.gitignore
 [push]
     default = current
+
+[branch]
+    autosetuprebase = always
