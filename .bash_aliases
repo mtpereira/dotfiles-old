@@ -14,6 +14,7 @@ alias v="vagrant"
 alias a="ansible"
 alias ap="ansible-playbook"
 alias ax="ansible-galaxy"
+alias e="${EDITOR}"
 
 # Utilities with some sane defaults
 alias rdp="xfreerdp -g 1024x640 -k pt --disable-theming --disable-menu-animations -u "
