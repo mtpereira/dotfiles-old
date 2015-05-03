@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 #
 # *Highly* inspired (ripped-off) from https://github.com/statico/dotfiles
 #
@@ -19,7 +19,7 @@ gitbase=git://github.com/mtpereira/dotfiles.git
 tarball=http://github.com/mtpereira/dotfiles/tarball/master
 
 function has() {
-    return $( which $1 >/dev/null )
+    return $(which $1 >/dev/null)
 }
 
 function note() {
@@ -127,9 +127,15 @@ if has vim; then
   cd $basedir
   ./.vim/update.sh all
 fi
+
 if has newsbeuter; then
   cd $basedir
   link newsbeuter-notifier.sh $bindir/newsbeuter-notifier.sh
+fi
+
+if has tmux; then
+  cd $basedir
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
 note "Running post-install script, if any..."
