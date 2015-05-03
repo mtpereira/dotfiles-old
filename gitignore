@@ -2,6 +2,7 @@
 #############
 *.swp
 .*.un~
+Session.vim
 
 # Python files #
 ################

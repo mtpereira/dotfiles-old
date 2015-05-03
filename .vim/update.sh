@@ -40,6 +40,7 @@ repos=(
   https://github.com/elixir-lang/vim-elixir
   https://github.com/editorconfig/editorconfig-vim
   https://github.com/altercation/vim-colors-solarized
+  https://github.com/tpope/vim-obsession
   )
 
 # Here's a list of everything else to download in the format
