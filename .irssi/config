@@ -12,9 +12,8 @@ chatnets = {
 };
 
 channels = (
-  { name = "r42"; chatnet = "Freenode"; autojoin = "Yes"; }
-  { name = "chef"; chatnet = "Freenode"; autojoin = "Yes"; }
   { name = "ansible"; chatnet = "Freenode"; autojoin = "Yes"; }
+  { name = "elixir-lang"; chatnet = "Freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
