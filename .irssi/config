@@ -16,6 +16,10 @@ channels = (
   { name = "elixir-lang"; chatnet = "Freenode"; autojoin = "Yes"; }
 );
 
+ignores = (
+  { level = "JOINS PARTS QUITS"; network = "Freenode"; }
+);
+
 aliases = {
   J = "join";
   WJOIN = "join -window";
