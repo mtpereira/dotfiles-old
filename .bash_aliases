@@ -15,6 +15,7 @@ alias a="ansible"
 alias ap="ansible-playbook"
 alias ax="ansible-galaxy"
 alias e="${EDITOR}"
+alias d="docker"
 
 # Utilities with some sane defaults
 alias rdp="xfreerdp -g 1024x640 -k pt --disable-theming --disable-menu-animations -u "
