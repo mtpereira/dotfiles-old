@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="false"
@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws brew common-aliases python screen sudo vagrant)
+plugins=(git aws brew common-aliases python screen sudo vagrant gpg-agent)
 
 # User configuration
 
@@ -90,5 +90,5 @@ export TERM=xterm-256color
 source ~/.bash_aliases
 
 # rag: start keychain
-eval `keychain --quiet --quick --eval --agents ssh,gpg tyr asgard vagrant`
+eval `keychain --quiet --quick --eval --agents ssh tyr asgard vagrant`
 
