@@ -37,10 +37,11 @@ repos=(
   https://github.com/davidhalter/jedi-vim.git
   https://github.com/tpope/vim-sensible.git
   https://github.com/elzr/vim-json.git
-  https://github.com/elixir-lang/vim-elixir
-  https://github.com/editorconfig/editorconfig-vim
-  https://github.com/altercation/vim-colors-solarized
-  https://github.com/tpope/vim-obsession
+  https://github.com/elixir-lang/vim-elixir.git
+  https://github.com/editorconfig/editorconfig-vim.git
+  https://github.com/altercation/vim-colors-solarized.git
+  https://github.com/tpope/vim-obsession.git
+  https://github.com/rust-lang/rust.vim.git
   )
 
 # Here's a list of everything else to download in the format
