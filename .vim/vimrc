@@ -52,3 +52,12 @@ autocmd FileType python set commentstring=#\%s
 " Ansible indent function will remove all indent after a blank line.
 let g:ansible_options = {'ignore_blank_lines': 0}
 
+" Synatic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

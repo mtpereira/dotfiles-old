@@ -129,3 +129,7 @@ function ads() {
     ldapsearch -LLL -D ${1} -W "(sAMAccountName=${2})"
 }
 
+function aws-system-reboots() {
+    aws ec2 describe-instances --filters $(aws ec2 describe-instance-status --include-all-instances --filter Name=event.code,Values=system-reboot | grep -E 'i-[0-9a-z]{8}' -o | tr '\n' ',' | sed 's/^/Name=instance-id,Values=/')
+}
+

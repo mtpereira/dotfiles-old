@@ -16,6 +16,8 @@ alias ap="ansible-playbook"
 alias ax="ansible-galaxy"
 alias e="${EDITOR}"
 alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
 
 # Utilities with some sane defaults
 alias rdp="xfreerdp -g 1024x640 -k pt --disable-theming --disable-menu-animations -u "
@@ -33,4 +35,5 @@ alias safe-upgrade="sudo apt-get update && sudo apt-get safe-upgrade"
 alias py2="python2.7"
 alias py3="python3.4"
 alias py="py3"
+
 

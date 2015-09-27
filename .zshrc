@@ -49,7 +49,7 @@ plugins=(git aws brew common-aliases python screen sudo vagrant gpg-agent)
 
 # User configuration
 
-export PATH="/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/Users/rag/bin:/Users/rag/bin/scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
+export PATH="/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/Users/rag/bin:/Users/rag/bin/scripts:/Users/rag/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -73,6 +73,12 @@ export GPGKEY=82D3CE73
 export TERM=xterm-256color
 [ -n "$TMUX" ] && export TERM=screen-256color
 
+# rag: set go path
+export GOPATH=$HOME/go
+
+# rag: qemu path for capstan
+export CAPSTAN_QEMU_PATH=/opt/homebrew/bin/qemu-img
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -88,7 +94,8 @@ export TERM=xterm-256color
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bash_aliases
+source ~/.bash_functions
 
 # rag: start keychain
-eval `keychain --quiet --quick --eval --agents ssh tyr asgard vagrant`
+eval `keychain --quiet --quick --eval --agents gpg,ssh tyr asgard vagrant`
 
