@@ -6,7 +6,7 @@
     tool = vimdiff
 
 [alias]
-    ci = commit
+    ci = commit --verbose
     cam = commit --amend
     st = status
     s = status -s -b
