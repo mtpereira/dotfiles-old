@@ -33,7 +33,7 @@ alias safe-upgrade="sudo apt-get update && sudo apt-get safe-upgrade"
 alias brew-upgrade="sudo bash -c 'brew update && brew upgrade && brew cleanup -s --force'"
 alias pip-upgrade="pip list --outdated | awk '{ print \$1 }' | xargs sudo -H pip install --upgrade"
 alias pomo-start="thyme -d -r"
-alias pomo-end="thyme -s"
+alias pomo-stop="thyme -s"
 
 # Python 2
 alias py2="python2.7"
