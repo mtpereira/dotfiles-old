@@ -97,7 +97,7 @@ source ~/.bash_aliases
 source ~/.bash_functions
 
 # rag: start keychain
-eval `keychain --quiet --quick --eval --agents gpg,ssh tyr asgard vagrant`
+eval `keychain --quiet --quick --eval --agents gpg,ssh tyr asgard`
 
 # rag: rbenv init
 eval "$(rbenv init -)"
