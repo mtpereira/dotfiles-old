@@ -16,6 +16,7 @@ filetype indent on
 set paste
 set textwidth=80
 set wrapmargin=2
+set breakindent
 
 highlight OverLenght ctermbg=darkred ctermfg=white
 call matchadd ('OverLenght', '\%81v', 100)
