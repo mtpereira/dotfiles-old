@@ -42,6 +42,7 @@ repos=(
   https://github.com/altercation/vim-colors-solarized.git
   https://github.com/tpope/vim-obsession.git
   https://github.com/rust-lang/rust.vim.git
+  https://github.com/Valloric/YouCompleteMe.git
   )
 
 # Here's a list of everything else to download in the format
@@ -63,7 +64,10 @@ case "$1" in
       dest="$bundledir/$(basename $url | sed -e 's/\.git$//')"
       rm -rf $dest
       echo "Cloning $url into $dest"
-      git clone $url $dest
+      git clone --recurse-submodules $url $dest
+	  if [ "$url" == "https://github.com/Valloric/YouCompleteMe.git" ]; then
+		$dest/install.py
+	  fi
       rm -rf $dest/.git
     done
     ;;
