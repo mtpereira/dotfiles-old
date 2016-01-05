@@ -9,4 +9,6 @@ PATH=/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH
 PATH=/opt/homebrew/bin:$PATH
 PATH=/opt/homebrew/sbin:$PATH
 PATH=$HOME/go/bin:$PATH
+PATH=$HOME/.cargo/bin:$PATH
 export PATH=$PATH
+
