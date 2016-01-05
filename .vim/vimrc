@@ -61,7 +61,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Autoformater for rust
-let g:formatdef_rustfmt = '"rustfmt"'
+let g:formatdef_rustfmt = '"~/.cargo/bin/rustfmt"'
 let g:formatters_rust = ['rustfmt']
-autocmd FileType rust autocmd BufWritePre <buffer> :Autoformat
+autocmd BufWritePre *.rs :Autoformat
 
