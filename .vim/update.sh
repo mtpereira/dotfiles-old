@@ -65,7 +65,7 @@ case "$1" in
       dest="$bundledir/$(basename $url | sed -e 's/\.git$//')"
       rm -rf $dest
       echo "Cloning $url into $dest"
-      git clone --recurse-submodules $url $dest
+      git clone --recurse-submodules --depth 1 $url $dest
 	  if [ "$url" == "https://github.com/Valloric/YouCompleteMe.git" ]; then
 		$dest/install.py
 	  fi
