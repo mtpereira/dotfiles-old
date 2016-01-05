@@ -36,7 +36,7 @@ alias pomo-start="thyme -d -r"
 alias pomo-stop="thyme -s"
 
 # Python 2
-alias py2="python2.7"
-alias py3="python3.4"
+alias py2="python2"
+alias py3="python3"
 alias py="py3"
 
