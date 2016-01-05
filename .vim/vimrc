@@ -50,9 +50,6 @@ autocmd FileType c,cpp,java,php,ruby,python,perl,bash,sh autocmd BufWritePre
 \ <buffer> :call StripTrailingWhitespaces()
 autocmd FileType python set commentstring=#\%s
 
-" Ansible indent function will remove all indent after a blank line.
-let g:ansible_options = {'ignore_blank_lines': 0}
-
 " Synatic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -62,3 +59,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Autoformater for rust
+let g:formatdef_rustfmt = '"rustfmt"'
+let g:formatters_rust = ['rustfmt']
+autocmd FileType rust autocmd BufWritePre <buffer> :Autoformat
+

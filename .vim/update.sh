@@ -43,6 +43,7 @@ repos=(
   https://github.com/tpope/vim-obsession.git
   https://github.com/rust-lang/rust.vim.git
   https://github.com/Valloric/YouCompleteMe.git
+  https://github.com/Chiel92/vim-autoformat.git
   )
 
 # Here's a list of everything else to download in the format
