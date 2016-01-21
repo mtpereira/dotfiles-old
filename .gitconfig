@@ -6,22 +6,29 @@
     tool = vimdiff
 
 [alias]
-    ci = commit --verbose
-    cam = commit --amend
-    st = status
-    s = status -s -b
-    l = log --graph --decorate --all --name-status --pretty='%C(auto)%h%Creset %C(auto)%d%Creset %cN (%ce) %ad %n %s'
-    df = diff
-    co = checkout
-    cob = checkout -b
-    a = add
-    f = fetch
-    ps = push --set-upstream
-    pst = !git ps && git ps --tags
-    pl = pull
-    up = !git pull $@ && git submodule update --init --recursive
-    m = merge
-    b = branch
+    ci   = commit --verbose
+    cam  = commit --amend
+    st   = status
+    s    = status -s -b
+    l    = log --graph --decorate --all --name-status --pretty='%C(auto)%h%Creset %C(auto)%d%Creset %cN (%ce) %ad %n %s'
+    df   = diff
+    co   = checkout
+    cob  = checkout -b
+    a    = add
+    ap   = add -p
+    f    = fetch
+    ps   = push --set-upstream
+    pst  = !git ps && git ps --tags
+    pl   = pull
+    up   = !git pull $@ && git submodule update --init --recursive
+    m    = merge
+    b    = branch
+    ba   = branch -a
+    bd   = branch -d
+    bD   = branch -D
+    dc   = diff --cached
+    rank = shortlog -sn --no-merges
+    bdm  = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
 
 [color]
     ui = auto
