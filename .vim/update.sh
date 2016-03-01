@@ -44,7 +44,11 @@ repos=(
   https://github.com/rust-lang/rust.vim.git
   https://github.com/Valloric/YouCompleteMe.git
   https://github.com/Chiel92/vim-autoformat.git
-  https://github.com/rust-lang/rust.vim.git
+  https://github.com/ctrlpvim/ctrlp.vim.git
+  https://github.com/scrooloose/nerdtree.git
+  https://github.com/tomtom/tcomment_vim.git
+  https://github.com/tpope/vim-rails.git
+  https://github.com/tpope/vim-bundler.git
   )
 
 # Here's a list of everything else to download in the format
