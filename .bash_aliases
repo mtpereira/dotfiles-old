@@ -18,6 +18,7 @@ alias e="${EDITOR}"
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
+alias h="heroku"
 
 # Utilities with some sane defaults
 alias rdp="xfreerdp -g 1024x640 -k pt --disable-theming --disable-menu-animations -u "
@@ -34,6 +35,7 @@ alias brew-upgrade="sudo bash -c 'brew update && brew upgrade ; brew cleanup -s 
 alias pip-upgrade="pip list --outdated | awk '{ print \$1 }' | xargs sudo -H pip install --upgrade"
 alias pomo-start="thyme -d -r"
 alias pomo-stop="thyme -s"
+alias ducks="du -cms * | sort -rn | head"
 
 # Python 2
 alias py2="python2"
