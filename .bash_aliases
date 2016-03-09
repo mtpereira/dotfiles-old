@@ -32,10 +32,11 @@ alias pproute="ip route | sort -k5 | perl -pe 's/^/$. - /'"
 alias dist-upgrade="sudo apt-get update && sudo apt-get dist-upgrade"
 alias safe-upgrade="sudo apt-get update && sudo apt-get safe-upgrade"
 alias brew-upgrade="sudo bash -c 'brew update && brew upgrade ; brew cleanup -s --force'"
-alias pip-upgrade="pip list --outdated | awk '{ print \$1 }' | xargs sudo -H pip install --upgrade"
+alias pip-upgrade="sudo pip install --upgrade pip && pip list --outdated | awk '{ print \$1 }' | xargs sudo -H pip install --upgrade"
 alias pomo-start="thyme -d -r"
 alias pomo-stop="thyme -s"
 alias ducks="du -cms * | sort -rn | head"
+alias yml-validate="python -c 'import yaml,sys;yaml.safe_load(sys.stdin)'"
 
 # Python 2
 alias py2="python2"
