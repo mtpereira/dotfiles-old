@@ -133,3 +133,13 @@ function aws-system-reboots() {
     aws ec2 describe-instances --filters $(aws ec2 describe-instance-status --include-all-instances --filter Name=event.code,Values=system-reboot | grep -E 'i-[0-9a-z]{8}' -o | tr '\n' ',' | sed 's/^/Name=instance-id,Values=/')
 }
 
+function dm-start() {
+    if [ "$#" != "1" ]; then
+        echo "Usage: $0 machine-name"
+        return 1
+    fi
+
+    docker-machine start "${1}"
+    eval $(docker-machine env "${1}")
+}
+
