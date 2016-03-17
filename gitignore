@@ -1,6 +1,6 @@
 # Vim files #
 #############
-*.swp
+*.sw?
 .*.un~
 Session.vim
 
