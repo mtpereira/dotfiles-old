@@ -50,6 +50,7 @@ repos=(
   https://github.com/tpope/vim-rails.git
   https://github.com/tpope/vim-bundler.git
   https://github.com/tpope/vim-fugitive.git
+  https://github.com/raimondi/delimitmate.git
   )
 
 # Here's a list of everything else to download in the format
