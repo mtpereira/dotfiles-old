@@ -37,6 +37,9 @@ alias pomo-start="thyme -d -r"
 alias pomo-stop="thyme -s"
 alias ducks="du -cms * | sort -rn | head"
 alias yml-validate="python -c 'import yaml,sys;yaml.safe_load(sys.stdin)'"
+alias d-rmi="docker-machine ssh ${DOCKER_MACHINE_NAME} \"docker images -q --filter 'dangling=true' | xargs -r docker rmi\""
+alias d-rm="docker-machine ssh ${DOCKER_MACHINE_NAME} \"docker ps -a -q -f status=exited | xargs -r docker rm -v\""
+alias d-volumes-rm="docker-machine ssh ${DOCKER_MACHINE_NAME} \"docker volume ls -qf dangling=true | grep -v ${DOCKER_MACHINE_NAME} | xargs -r docker volume rm\""
 
 # Python 2
 alias py2="python2"
