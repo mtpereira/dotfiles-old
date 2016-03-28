@@ -8,6 +8,12 @@ Session.vim
 ################
 *.pyc
 
+# Ruby files #
+##############
+.rbenv-*
+.bundle/
+
+
 # Vagrant #
 # #########
 *.vagrant/
@@ -16,3 +22,4 @@ Session.vim
 # Mac OS #
 ##########
 .DS_Store
+
