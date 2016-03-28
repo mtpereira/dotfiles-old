@@ -49,6 +49,8 @@ plugins=(git aws brew common-aliases python tmux sudo vagrant gpg-agent heroku d
 
 # User configuration
 
+setopt HIST_IGNORE_SPACE
+
 export PATH="/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/Users/rag/bin:/Users/rag/bin/scripts:/Users/rag/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
