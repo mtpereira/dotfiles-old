@@ -23,3 +23,6 @@ Session.vim
 ##########
 .DS_Store
 
+# Ansible #
+###########
+*.retry
