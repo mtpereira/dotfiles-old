@@ -29,6 +29,7 @@
     dc   = diff --cached
     rank = shortlog -sn --no-merges
     bdm  = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
+    bdr  = "!git push origin --delete $@ && git branch -D $@"
 
 [color]
     ui = auto
