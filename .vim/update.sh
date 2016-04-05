@@ -34,22 +34,18 @@ repos=(
   https://github.com/Lokaltog/vim-powerline.git
   https://github.com/scrooloose/syntastic.git
   https://github.com/tpope/vim-pathogen.git
-  https://github.com/davidhalter/jedi-vim.git
   https://github.com/tpope/vim-sensible.git
   https://github.com/elzr/vim-json.git
   https://github.com/elixir-lang/vim-elixir.git
   https://github.com/editorconfig/editorconfig-vim.git
   https://github.com/altercation/vim-colors-solarized.git
   https://github.com/tpope/vim-obsession.git
-  https://github.com/rust-lang/rust.vim.git
   https://github.com/Valloric/YouCompleteMe.git
   https://github.com/Chiel92/vim-autoformat.git
   https://github.com/ctrlpvim/ctrlp.vim.git
   https://github.com/scrooloose/nerdtree.git
   https://github.com/tomtom/tcomment_vim.git
   https://github.com/tpope/vim-rails.git
-  https://github.com/tpope/vim-bundler.git
-  https://github.com/tpope/vim-fugitive.git
   https://github.com/raimondi/delimitmate.git
   )
 
