@@ -43,3 +43,7 @@
 
 [branch]
     autosetuprebase = always
+
+[commit]
+    gpgsign = true
+
