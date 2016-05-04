@@ -7,8 +7,8 @@ alias grep="grep --color --exclude-dir='.svn' --exclude-dir='.git'"
 
 # Shorthands
 alias g="git"
-alias ag="apt-get"
-alias ac="apt-cache"
+alias aptg="apt-get"
+alias aptc="apt-cache"
 alias s="sudo "
 alias v="vagrant"
 alias a="ansible"
