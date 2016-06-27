@@ -45,7 +45,20 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws brew common-aliases python tmux sudo vagrant gpg-agent heroku docker)
+plugins=( \
+	git \
+	aws \
+	brew \
+	common-aliases \
+	python \
+	tmux \
+	sudo \
+	vagrant \
+	gpg-agent \
+	heroku \
+	docker \
+	nix \
+)
 
 # User configuration
 
@@ -103,4 +116,7 @@ eval `keychain --quiet --quick --eval --agents gpg,ssh tyr asgard`
 
 # rag: rbenv init
 eval "$(rbenv init -)"
+
+# rag: add nix
+source ~/.nix-profile/etc/profile.d/nix.sh
 
