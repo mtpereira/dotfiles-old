@@ -46,8 +46,6 @@ repos=(
   https://github.com/scrooloose/nerdtree.git
   https://github.com/tomtom/tcomment_vim.git
   https://github.com/tpope/vim-rails.git
-  https://github.com/raimondi/delimitmate.git
-  https://github.com/Yggdroot/indentLine.git
   )
 
 # Here's a list of everything else to download in the format
