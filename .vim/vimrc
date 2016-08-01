@@ -13,11 +13,14 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 filetype indent on
-set paste
 set textwidth=80
 set wrapmargin=2
 set breakindent
 set autoread
+" Autosave when running :make tasks
+set autowrite
+set updatetime=100
+
 
 highlight OverLenght ctermbg=darkred ctermfg=white
 call matchadd ('OverLenght', '\%81v', 100)
@@ -50,7 +53,7 @@ nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 autocmd FileType c,cpp,java,php,ruby,python,perl,bash,sh autocmd BufWritePre
 \ <buffer> :call StripTrailingWhitespaces()
 
-" Synatic settings
+" Synatastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -101,4 +104,17 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Terraform
 let g:terraform_fmt_on_save = 1
+
+" Golang
+let g:go_list_type = "quickfix"
+let g:go_fmt_command = "goimports"
+let g:go_metalinter_autosave = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 

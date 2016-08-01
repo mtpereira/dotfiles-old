@@ -39,12 +39,12 @@ repos=(
   https://github.com/editorconfig/editorconfig-vim.git
   https://github.com/altercation/vim-colors-solarized.git
   https://github.com/tpope/vim-obsession.git
-  https://github.com/Valloric/YouCompleteMe.git
   https://github.com/Chiel92/vim-autoformat.git
   https://github.com/ctrlpvim/ctrlp.vim.git
   https://github.com/scrooloose/nerdtree.git
   https://github.com/tomtom/tcomment_vim.git
   https://github.com/fatih/vim-go.git
+  https://github.com/SirVer/ultisnips.git
   )
 
 # Here's a list of everything else to download in the format
