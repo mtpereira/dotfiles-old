@@ -3,13 +3,13 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export PYTHONPATH=/opt/homebrew/lib/python2.7/site-packages/
 export GPGKEY=82D3CE73
-export GOROOT=$HOME/go
+export GOPATH=$HOME/go
 export DOCKER_MACHINE_NAME="bees"
 PATH=$HOME/bin:$HOME/bin/scripts:$PATH
 PATH=/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH
 PATH=/opt/homebrew/bin:$PATH
 PATH=/opt/homebrew/sbin:$PATH
-PATH=$HOME/go/bin:$PATH
+PATH=$GOPATH/bin:$PATH
 PATH=$HOME/.cargo/bin:$PATH
 export PATH=$PATH
 
