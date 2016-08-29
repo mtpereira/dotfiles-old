@@ -46,6 +46,7 @@ repos=(
   https://github.com/fatih/vim-go.git
   https://github.com/SirVer/ultisnips.git
   https://github.com/tpope/vim-fugitive.git
+  https://github.com/airblade/vim-gitgutter.git
   )
 
 # Here's a list of everything else to download in the format
