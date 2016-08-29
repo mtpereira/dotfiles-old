@@ -31,7 +31,7 @@ me=.vim/update.sh
 # This is a list of all plugins which are available via Git repos. git:// URLs
 # don't work.
 repos=(
-  https://github.com/Lokaltog/vim-powerline.git
+  https://github.com/itchyny/lightline.vim.git
   https://github.com/scrooloose/syntastic.git
   https://github.com/tpope/vim-pathogen.git
   https://github.com/tpope/vim-sensible.git
