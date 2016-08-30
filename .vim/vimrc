@@ -186,7 +186,11 @@ function! LightLinePercent()
 endfunction
 
 function! LightLineFugitive()
-  return exists('*fugitive#head') ? fugitive#head() : ''
+  if exists("*fugitive#head")
+    let branch = fugitive#head()
+    return branch !=# '' ? 'BR: '.branch : ''
+  endif
+  return ''
 endfunction
 
 function! LightLineGo()
