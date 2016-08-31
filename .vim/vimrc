@@ -126,31 +126,35 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 " lightline (statusbar)
 let g:lightline = {
-      \ 'colorscheme': 'powerline',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste'],
-      \             [ 'fugitive', 'filename', 'modified', 'ctrlpmark' ],
-      \             [ 'go'] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
-      \ },
-      \ 'inactive': {
-      \   'left': [ [ 'go'] ],
-      \ },
-      \ 'component_function': {
-      \   'lineinfo': 'LightLineInfo',
-      \   'percent': 'LightLinePercent',
-      \   'modified': 'LightLineModified',
-      \   'filename': 'LightLineFilename',
-      \   'go': 'LightLineGo',
-      \   'fileformat': 'LightLineFileformat',
-      \   'filetype': 'LightLineFiletype',
-      \   'fileencoding': 'LightLineFileencoding',
-      \   'mode': 'LightLineMode',
-      \   'fugitive': 'LightLineFugitive',
-      \   'ctrlpmark': 'CtrlPMark',
-      \ },
+      \  'colorscheme': 'powerline',
+      \  'active': {
+      \    'left': [ [ 'mode', 'paste'],
+      \              [ 'fugitive', 'relativepath', 'modified', 'ctrlpmark' ],
+      \              [ 'go'] ],
+      \    'right': [ [ 'lineinfo' ],
+      \               [ 'percent' ],
+      \               [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \  },
+      \  'inactive': {
+      \    'left': [ [ 'go'] ],
+      \  },
+      \  'component_function': {
+      \    'lineinfo': 'LightLineInfo',
+      \    'percent': 'LightLinePercent',
+      \    'modified': 'LightLineModified',
+      \    'filename': 'LightLineFilename',
+      \    'go': 'LightLineGo',
+      \    'fileformat': 'LightLineFileformat',
+      \    'filetype': 'LightLineFiletype',
+      \    'fileencoding': 'LightLineFileencoding',
+      \    'mode': 'LightLineMode',
+      \    'fugitive': 'LightLineFugitive',
+      \    'ctrlpmark': 'CtrlPMark',
+      \  },
+      \  'mode_map': {
+      \     'n': 'N', 'i': 'I', 'R': 'R', 'v': 'V', 'V': 'V-L', "\<C-v>": 'V-B',
+      \     'c': 'C', 's': 'S', 'S': 'S-L', "\<C-s>": 'S-B', 't': 'T'
+      \  },
       \ }
 
 function! LightLineModified()
@@ -188,7 +192,7 @@ endfunction
 function! LightLineFugitive()
   if exists("*fugitive#head")
     let branch = fugitive#head()
-    return branch !=# '' ? 'BR: '.branch : ''
+    return branch !=# '' ? 'B: '.branch : ''
   endif
   return ''
 endfunction
