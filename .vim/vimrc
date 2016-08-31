@@ -128,8 +128,8 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:lightline = {
       \  'colorscheme': 'powerline',
       \  'active': {
-      \    'left': [ [ 'mode', 'paste'],
-      \              [ 'fugitive', 'modified', 'relativepath', 'ctrlpmark' ],
+      \    'left': [ [ 'mode', 'paste' ],
+      \              [ 'readonly', 'fugitive', 'modified', 'relativepath', 'ctrlpmark' ],
       \              [ 'go'] ],
       \    'right': [ [ 'lineinfo' ],
       \               [ 'percent' ],
