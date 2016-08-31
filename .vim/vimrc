@@ -129,7 +129,7 @@ let g:lightline = {
       \  'colorscheme': 'powerline',
       \  'active': {
       \    'left': [ [ 'mode', 'paste'],
-      \              [ 'fugitive', 'relativepath', 'modified', 'ctrlpmark' ],
+      \              [ 'fugitive', 'modified', 'relativepath', 'ctrlpmark' ],
       \              [ 'go'] ],
       \    'right': [ [ 'lineinfo' ],
       \               [ 'percent' ],
