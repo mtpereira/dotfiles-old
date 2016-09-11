@@ -44,10 +44,10 @@ repos=(
   https://github.com/scrooloose/nerdtree.git
   https://github.com/tomtom/tcomment_vim.git
   https://github.com/fatih/vim-go.git
-  https://github.com/SirVer/ultisnips.git
   https://github.com/tpope/vim-fugitive.git
   https://github.com/airblade/vim-gitgutter.git
   https://github.com/jiangmiao/auto-pairs.git
+  https://github.com/Valloric/YouCompleteMe.git
   )
 
 # Here's a list of everything else to download in the format
