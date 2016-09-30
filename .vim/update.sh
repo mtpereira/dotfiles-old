@@ -31,25 +31,26 @@ me=.vim/update.sh
 # This is a list of all plugins which are available via Git repos. git:// URLs
 # don't work.
 repos=(
-  https://github.com/itchyny/lightline.vim.git
-  https://github.com/scrooloose/syntastic.git
-  https://github.com/tpope/vim-pathogen.git
-  https://github.com/tpope/vim-sensible.git
-  https://github.com/elzr/vim-json.git
-  https://github.com/editorconfig/editorconfig-vim.git
-  https://github.com/altercation/vim-colors-solarized.git
-  https://github.com/tpope/vim-obsession.git
   https://github.com/Chiel92/vim-autoformat.git
-  https://github.com/ctrlpvim/ctrlp.vim.git
-  https://github.com/scrooloose/nerdtree.git
-  https://github.com/tomtom/tcomment_vim.git
-  https://github.com/fatih/vim-go.git
-  https://github.com/tpope/vim-fugitive.git
-  https://github.com/airblade/vim-gitgutter.git
-  https://github.com/jiangmiao/auto-pairs.git
+  https://github.com/SirVer/ultisnips.git
   https://github.com/Valloric/YouCompleteMe.git
   https://github.com/Xuyuanp/nerdtree-git-plugin.git
-  https://github.com/SirVer/ultisnips.git
+  https://github.com/airblade/vim-gitgutter.git
+  https://github.com/altercation/vim-colors-solarized.git
+  https://github.com/ctrlpvim/ctrlp.vim.git
+  https://github.com/editorconfig/editorconfig-vim.git
+  https://github.com/elzr/vim-json.git
+  https://github.com/fatih/vim-go.git
+  https://github.com/hashivim/vim-terraform.git
+  https://github.com/itchyny/lightline.vim.git
+  https://github.com/jiangmiao/auto-pairs.git
+  https://github.com/scrooloose/nerdtree.git
+  https://github.com/scrooloose/syntastic.git
+  https://github.com/tomtom/tcomment_vim.git
+  https://github.com/tpope/vim-fugitive.git
+  https://github.com/tpope/vim-obsession.git
+  https://github.com/tpope/vim-pathogen.git
+  https://github.com/tpope/vim-sensible.git
   )
 
 # Here's a list of everything else to download in the format
