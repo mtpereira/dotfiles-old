@@ -49,6 +49,7 @@ repos=(
   https://github.com/jiangmiao/auto-pairs.git
   https://github.com/Valloric/YouCompleteMe.git
   https://github.com/Xuyuanp/nerdtree-git-plugin.git
+  https://github.com/SirVer/ultisnips.git
   )
 
 # Here's a list of everything else to download in the format
