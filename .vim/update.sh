@@ -51,6 +51,7 @@ repos=(
   https://github.com/tpope/vim-obsession.git
   https://github.com/tpope/vim-pathogen.git
   https://github.com/tpope/vim-sensible.git
+  https://github.com/junegunn/vim-easy-align.git
   )
 
 # Here's a list of everything else to download in the format
