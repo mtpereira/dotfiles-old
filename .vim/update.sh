@@ -74,7 +74,7 @@ case "$1" in
       echo "Cloning $url into $dest"
       git clone --recurse-submodules --depth 1 $url $dest
 	  if [ "$url" == "https://github.com/Valloric/YouCompleteMe.git" ]; then
-		$dest/install.py
+		$dest/install.py --clang-completer --gocode-completer --tern-completer
 	  fi
       rm -rf $dest/.git
     done
