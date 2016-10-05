@@ -8,7 +8,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=( \
-	git \
 	aws \
 	brew \
 	common-aliases \
