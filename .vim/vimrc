@@ -38,11 +38,19 @@ fun! StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
+autocmd FileType c,cpp,java,php,ruby,python,perl,bash,sh autocmd BufWritePre
+\ <buffer> :call StripTrailingWhitespaces()
+
 " Drop the stabilizer wheels.
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
+
+" Show whitespaces and related chars.
+
+set list
+set listchars=tab:>·,trail:~,extends:>,precedes:<
 
 " Append modeline after last line in buffer.
 " Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
@@ -54,9 +62,6 @@ function! AppendModeline()
   call append(line("$"), l:modeline)
 endfunction
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
-
-autocmd FileType c,cpp,java,php,ruby,python,perl,bash,sh autocmd BufWritePre
-\ <buffer> :call StripTrailingWhitespaces()
 
 " Synatastic settings
 set statusline+=%#warningmsg#
@@ -71,6 +76,7 @@ let g:syntastic_enable_signs = 1
 
 " fugitive (git)
 set statusline+=%{fugitive#statusline()}
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " YouCompleteMe settings
 let g:ycm_register_as_syntastic_checker = 0
