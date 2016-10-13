@@ -26,6 +26,7 @@ alias rdp-old="exec rdesktop -k pt -g 1024x640 -r disk:$(hostname)='/home/rag/Vi
 alias swapcaps='xmodmap ~/.Xmodmap'
 alias tmux='tmux -2'
 alias ejson='ejson --keydir ~/.ejson/keys'
+alias minikube-start='minikube start --vm-driver xhyve --insecure-registry localhost:5000'
 
 # Custom commands
 alias rbu="rsync -av --exclude VirtualBox\ VMs/ --exclude \"Desktop/\" --exclude \"Dropbox/\" --exclude \"OneDrive/\" --exclude \"Downloads/\" --exclude \".cache/\" --exclude \"*.un~\" --exclude \".local/share\" --exclude \".vagrant.d/\" --exclude MEOCloud --exclude Library --exclude Applications --exclude debug --exclude projs/linkedcare/deploys --exclude Music --exclude Movies --exclude \".gem\" --exclude \".npm\" --exclude \".rbenv\" --exclude \".dotfiles\" --exclude \".docker/machine/\" --exclude \".git\" --exclude \"virtualenv\" --delete --delete-excluded /Users/rag/ bragi.local:/mnt/elements/backups/tyr/home/rag/ | tee >(ssh bragi \"cat - > /mnt/elements/backups/tyr/home-$(date +%Y%m%d).log\")"
