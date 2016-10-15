@@ -24,11 +24,6 @@ set updatetime=100
 highlight OverLenght ctermbg=darkred ctermfg=white
 call matchadd ('OverLenght', '\%81v', 100)
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-
 fun! StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
