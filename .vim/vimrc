@@ -58,6 +58,13 @@ function! AppendModeline()
 endfunction
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
+" Set spell-checking for certain files
+autocmd FileType gitcommit,markdown,text call SetLocalSpell()
+function SetLocalSpell()
+    setlocal spell
+    setlocal complete+=kspell
+endfunction
+
 " Synatastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
