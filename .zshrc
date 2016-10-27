@@ -8,17 +8,18 @@ DISABLE_UNTRACKED_FILES_DIRTY="false"
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=( \
-	aws \
-	brew \
-	common-aliases \
-	python \
-	tmux \
-	sudo \
-	vagrant \
-	gpg-agent \
-	heroku \
-	docker \
-    golang
+    aws \
+    brew \
+    common-aliases \
+    python \
+    tmux \
+    sudo \
+    vagrant \
+    gpg-agent \
+    heroku \
+    docker \
+    golang \
+    kubectl
 )
 
 setopt HIST_IGNORE_SPACE
