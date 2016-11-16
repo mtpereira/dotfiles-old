@@ -42,10 +42,11 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
-" Show whitespaces and related chars.
-
+" Show whitespaces and related chars,
+" except on Golang files.
 set list
 set listchars=tab:>·,trail:~,extends:>,precedes:<
+autocmd FileType go set nolist
 
 " Append modeline after last line in buffer.
 " Use substitute() instead of printf() to handle '%%s' modeline in LaTeX
