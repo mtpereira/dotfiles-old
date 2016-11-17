@@ -1,6 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="bullet-train"
+ZSH_THEME="agnoster"
+DEFAULT_USER="rag"
 CASE_SENSITIVE="false"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
