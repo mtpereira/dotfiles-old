@@ -159,13 +159,14 @@ let g:lightline = {
       \  'active': {
       \    'left': [ [ 'mode', 'paste' ],
       \              [ 'readonly', 'fugitive', 'modified', 'relativepath', 'ctrlpmark' ],
-      \              [ 'go'] ],
+      \              [ 'go' ] ],
       \    'right': [ [ 'lineinfo' ],
       \               [ 'percent' ],
       \               [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \  },
       \  'inactive': {
-      \    'left': [ [ 'go'] ],
+      \    'left': [ [ 'readonly', 'fugitive', 'modified', 'relativepath', 'ctrlpmark' ],
+      \              [ 'go' ] ]
       \  },
       \  'component_function': {
       \    'lineinfo': 'LightLineInfo',
