@@ -1,28 +1,25 @@
-# Vim files #
-#############
+# Vim
 *.sw?
 .*.un~
 Session.vim
 
-# Python files #
-################
+# Python
 *.pyc
 
-# Ruby files #
-##############
+# Ruby
 .rbenv-*
 .bundle/
 
 
-# Vagrant #
-# #########
+# Vagrant
 *.vagrant/
 *vagrant_ansible_inventory*
 
-# Mac OS #
-##########
+# Mac OS
 .DS_Store
 
-# Ansible #
-###########
+# Ansible
 *.retry
+
+# VSCode
+.vscode
