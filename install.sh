@@ -79,7 +79,7 @@ if [ -e $basedir ]; then
     cd $basedir
     if [ -e .git ]; then
         note "Updating dotfiles from git..."
-        git pull --rebase origin master
+        git pull --rebase origin
     else
         die "$basedir exists but has no .git dir."
     fi
